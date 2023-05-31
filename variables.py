@@ -9,5 +9,8 @@ y = 6
 z = x + y
 print(z)
 print(x-y)
-id(x)
-id(y)
+print(id(x))
+print(id(y))
+
+# same memory allocation for the same number
+print(id(5))
