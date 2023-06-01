@@ -69,3 +69,28 @@ print(type(var9))
 newList = list(var9)
 print(newList)
 print(type(newList))
+
+# Sets
+# It is an unordered collection of elements
+print("BI - Sets type")
+var10 = {10, 5, 7, 5, 22, 10, 33}
+print(var10)
+print(type(var10))
+
+# Dictionaries
+# It is working with key/value pairs
+
+d = {0: 'FALSE', 1: 'TRUE'}
+print(d)
+print(type(d))
+print(d[0])
+print(d[1])
+
+# Literals and Identifiers
+# in the example a = 15
+# 15 is the LITERAL
+# a is the IDENTIFIER
+# LITERALS can be further divided in Numeric, Boolean or String
+c = 0b110101  # binary value of 53
+print(c)
+print(type(c))
