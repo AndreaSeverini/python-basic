@@ -33,11 +33,11 @@ y = 10
 
 print('x=',x,'y=',y)
 
-print('SUM ASSIGNMENT')
+print('SUM ASSIGNMENT x = x + y')
 x += y  # x = x + y
 print('x=',x)  # Output: 15
 
-print('SUB ASSIGNMENT')
+print('SUB ASSIGNMENT y = y - 3')
 y -= 3  # y = y - 3
 print('y=',y)  # Output: 7
 
@@ -127,7 +127,7 @@ print('Bitwise XOR: 0110')
 print(a ^ b)   # Bitwise XOR: 0110 (Decimal: 6)
 print('Bitwise NOT: 1010')
 print(~a)      # Bitwise NOT: 1010 (Decimal: -6)
-print('Left shift by 1: 1010 (<<)')
+print('Left shift by 1: 1010 (a<<1)')
 print(a << 1)  # Left shift by 1: 1010 (Decimal: 10)
-print('Right shift by 1: 0010 (>>)')
+print('Right shift by 1: 0010 (a>>1)')
 print(a >> 1)  # Right shift by 1: 0010 (Decimal: 2)
