@@ -52,3 +52,20 @@ var7 = ['Hello Python', 6, True]
 print(var7)
 print(var7[0], var7[1])
 print(type(var7))
+
+print("BI - Tuple type")
+# A tuple represents a group of elements of DIFFERENT TYPES.
+var8 = ('Hello Python', 6, True)
+print(var8)
+print(var8[0], var8[1])
+print(type(var8))
+
+print("BI - Range type")
+# A range is a sequence useful to loop through.
+# range(start, stop[,step]) stop is missed
+var9 = range(1,11,2)
+print(var9)
+print(type(var9))
+newList = list(var9)
+print(newList)
+print(type(newList))
