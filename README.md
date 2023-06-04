@@ -8,4 +8,6 @@ It hopefully will be useful for anyone that may be landed here interested.
 ### 3. Operators
 ### 4. Control Statements
 ### 5. Loops
-
+### 6. Strings and Characters
+### 7. Lists
+### 8. Tuples
