@@ -51,3 +51,43 @@ print("Lowercase:", message.lower())
 print("Index of 'World':", message.index("World"))
 print("Count of 'l':", message.count("l"))
 print("\n")
+
+# Example 2: String methods (continued)
+# Strings are sequences of characters and have many associated methods for manipulation.
+# Here are a few more commonly used string methods:
+
+# Removing whitespace
+message = "  Hello, World!  "
+print("Example 2: String methods (continued)")
+print("Original message:", message)
+print("Stripped message:", message.strip())
+print("Left-stripped message:", message.lstrip())
+print("Right-stripped message:", message.rstrip())
+
+# Checking the start and end of a string
+print("Starts with 'Hello':", message.startswith("Hello"))
+print("Ends with 'World!':", message.endswith("World!"))
+
+# Splitting a string
+words = message.split(",")
+print("Split string:", words)
+
+# Joining strings
+joined_message = "-".join(words)
+print("Joined string:", joined_message)
+
+# Replacing substrings
+replaced_message = message.replace("World", "Python")
+print("Replaced message:", replaced_message)
+
+# Checking for character types
+print("Is 'Hello' alphanumeric?", "Hello".isalnum())
+print("Is '123' numeric?", "123".isnumeric())
+print("Is 'Hello' alphabetic?", "Hello".isalpha())
+
+# Formatting strings
+name = "Alice"
+age = 25
+formatted_message = "My name is {} and I'm {} years old.".format(name, age)
+print("Formatted message:", formatted_message)
+print("\n")
