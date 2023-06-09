@@ -11,3 +11,6 @@ It hopefully will be useful for anyone that may be landed here interested.
 ### 6. Strings and Characters
 ### 7. Lists
 ### 8. Tuples
+### 9. Dictionaries
+### 10. Slicing and Indexing
+### 11. Functions
