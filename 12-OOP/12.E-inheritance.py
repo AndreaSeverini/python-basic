@@ -57,6 +57,10 @@ pol = Square()
 pol.set_val(10, 10)
 print(pol.area())  # Output: 100
 
+pol2 = Triangle()
+pol2.set_val(10, 10)
+print(pol2.area())  # Output: 100
+
 # In this example, we define a base class called Polygon.
 
 # The Polygon class has two private variables, __width and __height, which are not directly accessible from outside
