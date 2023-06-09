@@ -190,15 +190,22 @@ The Object-Oriented Programming (OOP) section covers the fundamental principles 
    This topic covers how to use the `super()` function in Python to invoke methods from parent classes. It explains the concept of method resolution order (MRO) and demonstrates how to use `super()` to call the `__init__` method of parent classes. It provides an example that showcases the usage of `super()` to achieve method overriding and maintain the correct order of method execution in a class hierarchy.
 
 - ### 12.G Composition and Aggregation
-  ### Composition
+  #### Composition
   Composition is a fundamental concept in object-oriented programming (OOP). It embodies a class relationship where one class (the _composite_ or _container_ class) incorporates an instance of another class (the _component_ or _content_ class). In this relationship, the composite class oversees the creation and lifecycle of the component class.
   The component class is part of the composite class, implying that the composite class is often not functional without the component class.
-  ### Aggregation
+  #### Aggregation
   Aggregation is another type of object-oriented class association. Here, one class (_aggregator_) contains a reference to an instance of another class (the _part_). However, in this relationship, the aggregator does not manage the lifecycle of the part class. 
   The part class is associated with the aggregator, but they maintain their own lifecycles, implying that the part can exist independently of the aggregator. Hence, the relationship is sometimes described as a "has-a" relationship (the aggregator _has a_ part).
-  ### Differences
+  #### Differences
   The crucial difference between composition and aggregation lies in the level of dependency between the classes. In composition, the composite class and component class are tightly coupled as the composite class manages the lifecycle of the component class, implying a higher level of dependency.
   In contrast, in aggregation, the aggregator and part classes are loosely coupled. The aggregator class has a reference to the part class, but does not manage its lifecycle, indicating a lower level of dependency.
+
+- ### 12.H Abstract Classes
+  In Python, abstract classes serve as "blueprints" for other classes. They are defined using the `abc` module. An abstract class can contain both regular methods (with implementation) and abstract methods (without implementation).
+  An abstract method is defined by the decorator `@abstractmethod` and contains no implementation. This decorator indicates that the method must be implemented by any non-abstract child class.
+  Attempting to create an instance of an abstract class results in an error. Instead, the abstract class should be subclassed, and at least all of its abstract methods should be implemented. 
+  This mechanism can be used to ensure that a class adheres to a certain interface, or in other words, that it includes particular methods with specific parameters. 
+  This means, when you define a child class from an abstract base class, the child class must provide the concrete implementation for all the abstract methods defined in the abstract base class. 
 
 ---
 
