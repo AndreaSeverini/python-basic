@@ -87,3 +87,5 @@ The "12-OOP" section covers Object-Oriented Programming (OOP) concepts in Python
 - ### 12.B Diving Deep into Classes And Objects
   This file delves deeper into the concepts of classes and objects in Python. It explores topics such as class constructors, instance variables, class variables, instance methods, class methods, and static methods. It provides examples and explanations to help readers understand how to work with these different aspects of classes and objects.
   
+- ### 12.C Diving Deep into Encapsulation
+   This file explores the concept of encapsulation in Python. It explains the importance of encapsulation for data hiding and abstraction. It discusses access modifiers such as public, protected, and private and demonstrates how to use them to control access to class members. It also provides examples to showcase the benefits of encapsulation in maintaining code integrity and enhancing code maintainability.
