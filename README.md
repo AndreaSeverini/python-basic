@@ -82,5 +82,8 @@ The Functions section covers the concept of functions in Python, including defin
 The "12-OOP" section covers Object-Oriented Programming (OOP) concepts in Python. It explores the principles of OOP and how to implement them using classes, objects, inheritance, encapsulation, and polymorphism. The section includes the following files:
 
 - ### 12.A OOP intro
-   This file provides an introduction to OOP in Python. It explains the core concepts of OOP, including classes, objects, attributes, and methods. It demonstrates how to define classes and create objects from them. It also discusses the concepts of inheritance, encapsulation, and polymorphism, along with practical examples to illustrate their usage.
+  This file provides an introduction to OOP in Python. It explains the core concepts of OOP, including classes, objects, attributes, and methods. It demonstrates how to define classes and create objects from them. It also discusses the concepts of inheritance, encapsulation, and polymorphism, along with practical examples to illustrate their usage.
 
+- ### 12.B Diving Deep into Classes And Objects
+  This file delves deeper into the concepts of classes and objects in Python. It explores topics such as class constructors, instance variables, class variables, instance methods, class methods, and static methods. It provides examples and explanations to help readers understand how to work with these different aspects of classes and objects.
+  
