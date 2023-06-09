@@ -25,6 +25,8 @@ Welcome to the "python-basic" repository! This repository aims to provide a comp
   - [12.E Diving Deep into Inheritance](#12e-diving-deep-into-inheritance)
   - [12.F Using Super()](#12f-using-super)
   - [12.G Composition and Aggregation](#12g-composition-and-aggregation)
+  - [12.I Polymorphism and Overloading Operators](#12i-polymorphism-and-overloading-operators)
+
 - [13. Create and Import Modules](#13-create-and-import-modules)
 - [Additional Resources](#additional-resources)
 - [Contributing](#contributing)
