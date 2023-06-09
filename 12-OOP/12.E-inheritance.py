@@ -118,6 +118,7 @@ class TriangleComplex(Polygon, Shape):
 
 
 pol3 = TriangleComplex()
+# We can now use both method of the parent class
 pol3.set_val(10, 10)
 pol3.set_color('blue')
 print(pol3.get_color(), pol3.area())  # Output: 100
