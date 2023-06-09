@@ -207,6 +207,13 @@ The Object-Oriented Programming (OOP) section covers the fundamental principles 
   This mechanism can be used to ensure that a class adheres to a certain interface, or in other words, that it includes particular methods with specific parameters. 
   This means, when you define a child class from an abstract base class, the child class must provide the concrete implementation for all the abstract methods defined in the abstract base class. 
 
+- ### 12.I Polymorphism and Overloading Operators
+  Polymorphism in Python demonstrates how a function can behave differently depending on the form of the object it interacts with. In simple words, it allows the same operation to work differently with various types of objects.
+  Python enables operator overloading, which is a fantastic example of polymorphism. Operator overloading allows the same operator to exhibit different behavior based on the context. 
+  In the `Doc` class we've created, which represents a document with a certain number of pages, we've overloaded the "*", and ">" operators. This means these operators can now interact not just with standard types like integers but with our `Doc` objects too!
+  Now, the "*" operator returns the product of the page counts of two `Doc` objects. The ">" operator allows us to compare if one document is larger than another based on their page count.
+  Remember, if you're working with different classes, you'll need to define these special methods (`__mul__`, `__gt__`) in those classes as well. Happy coding!
+
 ---
 
 ## 13. Create and Import Modules
