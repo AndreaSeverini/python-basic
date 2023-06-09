@@ -1,5 +1,6 @@
 # Python Basics
 ![Python Basics](images/python.webp)
+
 Welcome to the "python-basic" repository! This repository aims to provide a comprehensive guide to Python's main concepts and usage. Whether you are a beginner getting started with Python or an experienced developer looking to refresh your Python skills, this repository is designed to be your go-to resource.
 
 ## Table of Contents
@@ -17,10 +18,26 @@ Welcome to the "python-basic" repository! This repository aims to provide a comp
 - [10. Slicing and Indexing](#10-slicing-and-indexing)
 - [11. Functions](#11-functions)
 - [12. Object-Oriented Programming (OOP)](#12-object-oriented-programming-oop)
+  - [12.A OOP Intro](#12a-oop-intro)
+  - [12.B Diving Deep into Classes and Objects](#12b-diving-deep-into-classes-and-objects)
+  - [12.C Diving Deep into Encapsulation](#12c-diving-deep-into-encapsulation)
+  - [12.D Diving Deep into Public And Private Method](#12d-diving-deep-into-public-and-private-method)
+  - [12.E Diving Deep into Inheritance](#12e-diving-deep-into-inheritance)
+  - [12.F Using Super()](#12f-using-super)
+  - [12.G Composition and Aggregation](#12g-composition-and-aggregation)
+- [13. Create and Import Modules](#13-create-and-import-modules)
+- [Additional Resources](#additional-resources)
+- [Contributing](#contributing)
+- [Contact](#contact)
 
 ---
 
 ## Preface:
+Python is an incredibly versatile programming language that's used in a wide range of fields, from data science and machine learning to web development. The goal of this repository is to provide a clear, concise guide to the basics of Python, making it easier for developers of all levels to grasp Python's main concepts and usage. By studying the materials in this repository, you'll gain a strong foundation in Python that will serve you well in any Python-related project or job role.
+
+### Getting Started
+
+Before diving into the content, make sure you have the latest version of Python installed on your computer. If not, visit the [official Python website](https://www.python.org/downloads/) to download and install Python. You may also want to have a code editor installed. Some popular options include [VS Code](https://code.visualstudio.com/download), [Sublime Text](https://www.sublimetext.com/3), and [PyCharm](https://www.jetbrains.com/pycharm/download/).
 ### Python Naming Convention (Classes, Variables, Functions, Methods...)
 
 The Python Naming Convention topic covers the guidelines and best practices for naming various elements in Python, such as classes, variables, functions, methods, constants, and modules. Following consistent naming conventions improves code readability and maintainability, making it easier for developers to understand and collaborate on Python projects.
@@ -167,6 +184,17 @@ The Object-Oriented Programming (OOP) section covers the fundamental principles 
 - ### 12.F Using Super()
    This topic covers how to use the `super()` function in Python to invoke methods from parent classes. It explains the concept of method resolution order (MRO) and demonstrates how to use `super()` to call the `__init__` method of parent classes. It provides an example that showcases the usage of `super()` to achieve method overriding and maintain the correct order of method execution in a class hierarchy.
 
+- ### 12.G Composition and Aggregation
+  ### Composition
+  Composition is a fundamental concept in object-oriented programming (OOP). It embodies a class relationship where one class (the _composite_ or _container_ class) incorporates an instance of another class (the _component_ or _content_ class). In this relationship, the composite class oversees the creation and lifecycle of the component class.
+  The component class is part of the composite class, implying that the composite class is often not functional without the component class.
+  ### Aggregation
+  Aggregation is another type of object-oriented class association. Here, one class (_aggregator_) contains a reference to an instance of another class (the _part_). However, in this relationship, the aggregator does not manage the lifecycle of the part class. 
+  The part class is associated with the aggregator, but they maintain their own lifecycles, implying that the part can exist independently of the aggregator. Hence, the relationship is sometimes described as a "has-a" relationship (the aggregator _has a_ part).
+  ### Differences
+  The crucial difference between composition and aggregation lies in the level of dependency between the classes. In composition, the composite class and component class are tightly coupled as the composite class manages the lifecycle of the component class, implying a higher level of dependency.
+  In contrast, in aggregation, the aggregator and part classes are loosely coupled. The aggregator class has a reference to the part class, but does not manage its lifecycle, indicating a lower level of dependency.
+
 ---
 
 ## 13. Create and Import Modules
@@ -174,8 +202,29 @@ This topic covers how to create and import modules in Python. Modules allow you 
 
 ---
 
+## Additional Resources
+
+For those looking to delve deeper into Python, here are some additional resources:
+
+- [Official Python Documentation](https://docs.python.org/3/)
+- [Real Python Tutorials](https://realpython.com/)
+- [Codecademy Python Course](https://www.codecademy.com/learn/learn-python-3)
+
 ## Contributing
 
-Contributions to this repository are more than welcome! If you have any improvements, bug fixes, or additional topics you'd like to see covered, feel free to open an issue or submit a pull request. Let's collaborate and make this repository an even better resource for the Python community.
+Contributions to this repository are more than welcome! Here's a simple guide on how you can contribute:
+
+1. Fork this repository
+2. Clone your forked repository to your local machine
+3. Create your feature branch: `git checkout -b feature/YourFeatureName`
+4. Commit your changes: `git commit -m 'Add some feature'`
+5. Push to the branch: `git push origin feature/YourFeatureName`
+6. Submit a pull request
+
+## Contact
+
+If you have any questions, suggestions, or just want to connect, feel free to reach out:
+
+- Twitter: [AndreaSeverini](https://twitter.com/AndreSeverini)
 
 Happy coding and enjoy learning Python!
