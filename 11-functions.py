@@ -47,4 +47,38 @@ def print_arguments(arg1, arg2, *args, **kwargs):
 print_arguments("Hello", "World", "Extra", "Arguments", name="John", age=25)
 print("\n")
 
+# Example 4: Local and Global Variables
+# Local variables are defined and used within a specific function, and their scope is limited to that function.
+# Global variables are defined outside any function and can be accessed from anywhere in the code.
+# The "global" keyword is used to modify a global variable within a function.
+# Here's an example:
+
+print("Example 4: Local and Global Variables")
+# Global variable
+global_var = 100
+
+# Function to demonstrate local and global variables
+def local_global_func():
+    # Using the "global" keyword to modify the global variable
+    global global_var
+    global_var = 200  # Modifying the global variable
+    local_var = 50
+    print("Local Variable:", local_var)
+    print("Modified Global Variable:", global_var)
+
+# Using the function
+local_global_func()
+print("Global Variable (outside function):", global_var)
+print("\n")
+
+# Additional Explanation: Using the "global" keyword
+# The "global" keyword is used inside a function to indicate that the variable being referenced is a global variable.
+# When you assign a value to a variable inside a function and want it to modify the global variable with the same name,
+# you need to use the "global" keyword to explicitly declare that you are referring to the global variable and not creating a new local variable.
+# Without using the "global" keyword, Python creates a new local variable with the same name, leaving the global variable unchanged.
+
+# In the example above, the "global" keyword is used within the "local_global_func()" function to modify the value of the global variable "global_var".
+# The assignment "global_var = 200" modifies the global variable instead of creating a new local variable.
+# As a result, the modified value is printed both inside and outside the function.
+
 
