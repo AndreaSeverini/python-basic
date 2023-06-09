@@ -89,3 +89,6 @@ The "12-OOP" section covers Object-Oriented Programming (OOP) concepts in Python
   
 - ### 12.C Diving Deep into Encapsulation
    This file explores the concept of encapsulation in Python. It explains the importance of encapsulation for data hiding and abstraction. It discusses access modifiers such as public, protected, and private and demonstrates how to use them to control access to class members. It also provides examples to showcase the benefits of encapsulation in maintaining code integrity and enhancing code maintainability.
+
+- ### 12.D Diving Deep into Public And Private Method
+   This file delves deeper into the concept of public and private methods in Python classes. It explains the difference between public and private methods and their significance in encapsulation. It demonstrates how to define private methods using naming conventions and showcases the advantages of using private methods in terms of code organization and readability. It also provides examples to illustrate the usage of public and private methods in class implementations.
