@@ -100,6 +100,11 @@ The Object-Oriented Programming (OOP) section covers the fundamental principles 
 
 ---
 
+## 13. Create and Import Modules
+This topic covers how to create and import modules in Python. Modules allow you to organize your code into separate files, making it easier to manage and reuse. It explains the process of importing modules using the `import` statement and demonstrates how to use functions and classes from imported modules. It also covers refactoring code with modules to improve code organization and reusability. 
+
+---
+
 ## Contributing
 
 Contributions to this repository are more than welcome! If you have any improvements, bug fixes, or additional topics you'd like to see covered, feel free to open an issue or submit a pull request. Let's collaborate and make this repository an even better resource for the Python community.
