@@ -20,6 +20,72 @@ Welcome to the "python-basic" repository! This repository aims to provide a comp
 
 ---
 
+## Preface:
+### Python Naming Convention (Classes, Variables, Functions, Methods...)
+
+The Python Naming Convention topic covers the guidelines and best practices for naming various elements in Python, such as classes, variables, functions, methods, constants, and modules. Following consistent naming conventions improves code readability and maintainability, making it easier for developers to understand and collaborate on Python projects.
+
+#### Classes:
+
+- Class names should use the `PascalCase` naming convention, where each word starts with an uppercase letter and there are no underscores between words.
+- Class names should be descriptive and indicate the purpose or nature of the class. For example, `Car`, `Person`, or `Rectangle`.
+
+```python
+class MyClass:
+    pass
+```
+
+#### Variables:
+
+Variable names should use lowercase letters and words should be separated by underscores (`snake_case`).
+Variable names should be descriptive and indicate the purpose or content of the variable. For example:
+
+```python
+my_variable = 42
+name = "John Doe"
+```
+#### Functions and Methods:
+
+- Function and method names should use lowercase letters and words should be separated by underscores (`snake_case`).
+- Function and method names should be descriptive and indicate the action or purpose of the function or method. For example:
+
+```python
+def calculate_area(length, width):
+    return length * width
+
+def print_message(message):
+    print(message)
+```
+
+#### Constants:
+
+- Constants are variables that have fixed values and are not meant to be changed.
+- Constant names should use uppercase letters and words should be separated by underscores (`UPPER_CASE`).
+- Constants should be declared at the module level and should have a meaningful name that reflects their purpose. For example:
+
+```python
+PI = 3.14159
+MAX_VALUE = 100
+```
+
+#### Modules:
+
+- Module names should use lowercase letters and words should be separated by underscores (`snake_case`).
+- Module names should be short, meaningful, and describe the purpose of the module. For example:
+
+```python
+import math_utils
+import string_operations
+```
+
+---
+
+It's important to note that these naming conventions are not enforced by the Python interpreter but are widely adopted by the Python community to promote consistency and readability in code. Adhering to these conventions makes your code more understandable to others and helps maintain a clean and uniform coding style.
+
+Following these conventions also aligns with the recommendations outlined in the official Python style guide, known as PEP 8. It's highly recommended to review the full PEP 8 style guide for further details on naming conventions and other aspects of Python coding style.
+
+---
+
 ## 00. Main
 The main section provides an overview and introduction to the repository. It explains the purpose of the repository, which is to serve as a comprehensive learning resource for Python. The repository covers Python's main concepts and usage to help readers gain a solid understanding of the language. The content in this section sets the foundation for the topics covered in subsequent sections.
 
