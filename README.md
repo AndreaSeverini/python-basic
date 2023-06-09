@@ -98,6 +98,9 @@ The Object-Oriented Programming (OOP) section covers the fundamental principles 
 - ### 12.E Diving Deep into Inheritance
    This file explores the concept of inheritance in Python. It explains how to create subclasses by inheriting properties and methods from parent classes. It covers topics such as single inheritance, multiple inheritance, method overriding, and method resolution order. It provides examples to demonstrate how inheritance can be used to create hierarchical relationships between classes and promote code reuse.
 
+- ### 12.F Using Super()
+   This topic covers how to use the `super()` function in Python to invoke methods from parent classes. It explains the concept of method resolution order (MRO) and demonstrates how to use `super()` to call the `__init__` method of parent classes. It provides an example that showcases the usage of `super()` to achieve method overriding and maintain the correct order of method execution in a class hierarchy.
+
 ---
 
 ## 13. Create and Import Modules
