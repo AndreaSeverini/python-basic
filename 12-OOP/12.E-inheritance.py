@@ -90,3 +90,34 @@ print(pol2.area())  # Output: 100
 
 # The output will be:
 # 100
+
+
+# MULTIPLE INHERITANCE
+
+class Shape:
+    __color = None
+
+    def set_color(self, color):
+        self.__color = color
+
+    def get_color(self):
+        return self.__color
+
+
+class TriangleComplex(Polygon, Shape):
+    """
+    The Triangle class is derived from the base class Polygon.
+    It inherits the attributes and methods of the base class.
+    """
+    def area(self):
+        """
+        The area method is defined in the Triangle class.
+        It calculates and returns the area of a triangle based on the width and height inherited from the base class.
+        """
+        return self.get_width() * self.get_height() * 1/2
+
+
+pol3 = TriangleComplex()
+pol3.set_val(10, 10)
+pol3.set_color('blue')
+print(pol3.get_color(), pol3.area())  # Output: 100
