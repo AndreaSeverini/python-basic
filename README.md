@@ -28,6 +28,7 @@ Welcome to the "python-basic" repository! This repository aims to provide a comp
   - [12.I Polymorphism and Overloading Operators](#12i-polymorphism-and-overloading-operators)
 
 - [13. Create and Import Modules](#13-create-and-import-modules)
+- [14. Errors and Errors' Handling](#14-errors-and-errors-handling)
 - [Additional Resources](#additional-resources)
 - [Contributing](#contributing)
 - [Contact](#contact)
@@ -222,6 +223,18 @@ The Object-Oriented Programming (OOP) section covers the fundamental principles 
 This topic covers how to create and import modules in Python. Modules allow you to organize your code into separate files, making it easier to manage and reuse. It explains the process of importing modules using the `import` statement and demonstrates how to use functions and classes from imported modules. It also covers refactoring code with modules to improve code organization and reusability. 
 
 ---
+
+## 14. Errors and Errors' Handling
+In programming, we generally categorize errors into three types: Compile-time, Run-time, and Logical Errors.
+
+* **Compile-Time Errors:** These errors are usually syntax or semantics mistakes that cause the compiler to raise an error. Examples can include missing colons or indentation errors in Python.
+
+* **Run-Time Errors:** Also known as exceptions, these errors occur during the execution of the program. They can lead to program crashes and can sometimes be hard to track down. Examples include out of memory errors, trying to open a file that doesn't exist, or attempting to divide by zero.
+
+* **Logical Errors:** These errors occur when the program's logic is flawed. This often results from a misunderstanding of the problem you're trying to solve or poor design decisions. The program runs without crashing, but it doesn't produce the expected result. This can make logical errors particularly hard to identify and fix.
+
+The goal of effective error handling is to anticipate potential sources of errors and handle them gracefully, avoiding program crashes and ensuring that your code behaves predictably even in the face of unexpected conditions.
+
 
 ## Additional Resources
 

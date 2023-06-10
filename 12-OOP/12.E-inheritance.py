@@ -1,5 +1,6 @@
 print("Example: Diving Deep into Inheritance")
 
+
 class Polygon:
     __width = None  # Restricted for Polygon
     __height = None
