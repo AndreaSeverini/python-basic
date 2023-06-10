@@ -25,10 +25,10 @@ Welcome to the "python-basic" repository! This repository aims to provide a comp
   - [12.E Diving Deep into Inheritance](#12e-diving-deep-into-inheritance)
   - [12.F Using Super()](#12f-using-super)
   - [12.G Composition and Aggregation](#12g-composition-and-aggregation)
-  - [12.I Polymorphism and Overloading Operators](#12i-polymorphism-and-overloading-operators)
-
+  - [12.I Polymorphism and Overloading Operators](#12i-polymorphism\-and-overloading-operators)
 - [13. Create and Import Modules](#13-create-and-import-modules)
-- [14. Errors and Errors' Handling](#14-errors-and-errors-handling)
+- [14. Errors and Errors' Handling](#14-errors)
+- [15. Exceptions' Handling](#15-exceptions-handling)
 - [Additional Resources](#additional-resources)
 - [Contributing](#contributing)
 - [Contact](#contact)
@@ -224,16 +224,29 @@ This topic covers how to create and import modules in Python. Modules allow you 
 
 ---
 
-## 14. Errors and Errors' Handling
+## 14. Errors
 In programming, we generally categorize errors into three types: Compile-time, Run-time, and Logical Errors.
 
 * **Compile-Time Errors:** These errors are usually syntax or semantics mistakes that cause the compiler to raise an error. Examples can include missing colons or indentation errors in Python.
 
-* **Run-Time Errors:** Also known as exceptions, these errors occur during the execution of the program. They can lead to program crashes and can sometimes be hard to track down. Examples include out of memory errors, trying to open a file that doesn't exist, or attempting to divide by zero.
+* **Run-Time Errors:** Also known as exceptions (when handled), these errors occur during the execution of the program. They can lead to program crashes and can sometimes be hard to track down. Examples include out of memory errors, trying to open a file that doesn't exist, or attempting to divide by zero.
 
 * **Logical Errors:** These errors occur when the program's logic is flawed. This often results from a misunderstanding of the problem you're trying to solve or poor design decisions. The program runs without crashing, but it doesn't produce the expected result. This can make logical errors particularly hard to identify and fix.
 
 The goal of effective error handling is to anticipate potential sources of errors and handle them gracefully, avoiding program crashes and ensuring that your code behaves predictably even in the face of unexpected conditions.
+
+---
+
+## 15. Exceptions' Handling
+Dealing with errors is a critical part of programming, and Python provides several tools for handling exceptions, which are essentially runtime errors. Here, we categorize exceptions as either built-in or user-defined.
+
+* **Built-in Exceptions:** Python has a variety of built-in exception classes that get raised when certain errors occur during the execution of your program. Examples include `ZeroDivisionError`, `TypeError`, `ValueError`, and many more. Python's `try/except` blocks are used to catch and handle these exceptions. If the code inside a `try` block causes an exception to be raised, that exception is caught and the corresponding `except` block is executed.
+
+* **User-Defined Exceptions:** You can also define your own exception classes in Python, which can be useful if you want to raise and catch errors that are specific to your application's domain. To define a custom exception, you typically create a new class that inherits from the base `Exception` class. You can then raise your custom exception with the `raise` statement.
+
+* **Else and Finally Clauses:** Besides `try` and `except`, Python's exception handling mechanism also includes `else` and `finally` clauses. The `else` clause lets you specify a block of code that will be executed if the `try` block does not raise an exception, while the `finally` clause lets you specify a block of code that will be executed no matter what - whether an exception is raised or not. This can be useful for cleanup activities that should always be performed, like closing a file or a network connection.
+
+Overall, handling exceptions properly is a crucial part of writing robust, reliable Python code. It helps you deal with unexpected situations and ensures that your program doesn't crash when it encounters an error.
 
 
 ## Additional Resources

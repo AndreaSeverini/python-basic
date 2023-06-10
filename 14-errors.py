@@ -1,4 +1,4 @@
-# ERRORS AND ERROR HANDLING
+# ERRORS
 
 # Compile-Time Error
 
