@@ -29,6 +29,7 @@ Welcome to the "python-basic" repository! This repository aims to provide a comp
 - [13. Create and Import Modules](#13-create-and-import-modules)
 - [14. Errors and Errors' Handling](#14-errors)
 - [15. Exceptions' Handling](#15-exceptions-handling)
+- [16. Input/Output File Handling](#16-inputoutput-file-handling)
 - [Additional Resources](#additional-resources)
 - [Contributing](#contributing)
 - [Contact](#contact)
@@ -248,6 +249,24 @@ Dealing with errors is a critical part of programming, and Python provides sever
 
 Overall, handling exceptions properly is a crucial part of writing robust, reliable Python code. It helps you deal with unexpected situations and ensures that your program doesn't crash when it encounters an error.
 
+---
+
+## 16. Input/Output File Handling
+Working with files is a common task in programming, and Python provides robust facilities for file handling, which includes reading from and writing to files.
+
+Here are the basic steps for working with files in Python:
+
+1. **Open the file**: Use the built-in `open()` function, specifying the filename and the mode as arguments. The mode can be 'r' (read), 'w' (write), 'a' (append), or a combination of these.
+
+2. **Perform operations on the file**: Once the file is open, you can read from it (if it was opened in read mode) or write to it (if it was opened in write or append mode). You read from a file with the `read()`, `readline()`, or `readlines()` method, and write to a file with the `write()` method.
+
+3. **Close the file**: After you're done with a file, it's important to close it using the `close()` method. This frees up system resources.
+
+In addition to the standard way of handling files (open, operate, close), Python provides a shortcut using the `with` statement. This automatically takes care of closing the file once you're done with it, even if exceptions occur within the `with` block.
+
+Overall, Python's file handling capabilities make it easy to work with data stored in files. You can easily read data from files for processing, and write processed data back to files for storage.
+
+---
 
 ## Additional Resources
 
