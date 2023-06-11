@@ -30,6 +30,8 @@ Welcome to the "python-basic" repository! This repository aims to provide a comp
 - [14. Errors and Errors' Handling](#14-errors)
 - [15. Exceptions' Handling](#15-exceptions-handling)
 - [16. Input/Output File Handling](#16-inputoutput-file-handling)
+- Projects
+  - [17. Multiple Face Detection](#17-multiple-face-detection)
 - [Additional Resources](#additional-resources)
 - [Contributing](#contributing)
 - [Contact](#contact)
@@ -265,6 +267,56 @@ Here are the basic steps for working with files in Python:
 In addition to the standard way of handling files (open, operate, close), Python provides a shortcut using the `with` statement. This automatically takes care of closing the file once you're done with it, even if exceptions occur within the `with` block.
 
 Overall, Python's file handling capabilities make it easy to work with data stored in files. You can easily read data from files for processing, and write processed data back to files for storage.
+
+---
+
+# Projects
+
+## 17. Multiple Face Detection
+This section introduces an important concept in image processing and computer vision: multiple face detection. The implementation involves the OpenCV library, a powerful tool for computer vision tasks, and the Haar Cascade classifier, a machine learning-based approach for object detection.
+
+- **Face Detection and OpenCV:**
+Face detection refers to identifying and locating faces in a given image. This technique is commonly used in various applications including surveillance, facial recognition software, and even on social platforms for tagging friends. Here are some useful resources for further understanding:
+  - [OpenCV Face Detection: Visual Guide](https://www.pyimagesearch.com/2018/02/26/face-detection-with-opencv-and-deep-learning/)
+  - [Face Detection using Haar Cascades](https://docs.opencv.org/master/d7/d8b/tutorial_py_face_detection.html)
+
+- **Haar Cascade Classifier:**
+The Haar Cascade is a classifier primarily used for object detection. Trained with numerous positive and negative images, the classifier is capable of detecting objects in images or video streams. The Haar Cascade implemented within OpenCV is mainly used for face detection, but it can be adjusted for any object detection.
+ 
+In this project:
+
+**1. Importing Libraries:**
+The script begins by importing the required libraries, `cv2` for computer vision tasks and `glob` for retrieving file pathnames.
+
+**2. Initialize the Haar Cascade Classifier:**
+The Haar Cascade face detector, provided by OpenCV, is initialized.
+
+**3. Define Maximum Image Size:**
+A maximum size is set for the largest dimension (width or height) of an image.
+
+**4. Image Retrieval and Iteration:**
+The script retrieves all `.png` images within the current directory. It then iterates through each image.
+
+**5. Image Scaling:**
+If an image's width or height exceeds the maximum size, the image is scaled down while maintaining its aspect ratio.
+
+**6. Grayscale Conversion:**
+Each image is converted to grayscale. The Haar Cascade face detector primarily works with grayscale images.
+
+**7. Contrast Enhancement:**
+Histogram equalization is applied to the grayscale image, enhancing its contrast and facilitating face detection.
+
+**8. Noise Reduction:**
+Gaussian blur is applied to the grayscale image, reducing its noise and enhancing face detection efficiency.
+
+**9. Face Detection:**
+Face detection is performed using the Haar Cascade face detector. It adjusts the scaleFactor and minNeighbors parameters based on the image.
+
+**10. Face Identification:**
+For each detected face, a rectangle is drawn on the original color image to visually identify the face's location.
+
+**11. Image Display and Transition:**
+Each processed image is displayed for 2000 ms before transitioning to the next image. After each display, the image window is closed to prepare for the next image.
 
 ---
 
