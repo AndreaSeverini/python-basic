@@ -32,6 +32,7 @@ Welcome to the "python-basic" repository! This repository aims to provide a comp
 - [16. Input/Output File Handling](#16-inputoutput-file-handling)
 - Projects
   - [17. Multiple Face Detection](#17-multiple-face-detection)
+  - [18. Random Password Generator](#18-random-password-generator)
 - [Additional Resources](#additional-resources)
 - [Contributing](#contributing)
 - [Contact](#contact)
@@ -320,6 +321,22 @@ Each processed image is displayed for 2000 ms before transitioning to the next i
 
 ---
 
+## 18. Random Password Generator
+This section delves into the implementation of a random password generator, a fundamental tool in data security and privacy. In modern technology, passwords are essential for user authentication and protection of sensitive data. However, creating a strong password that's hard to crack, yet easy to remember, can be a daunting task. That's where a random password generator comes in. This program demonstrates how to use Python to generate random passwords.
+
+The examples provided here showcase two ways to create a random password generator:
+
+1. **Using Random Choices From Defined Lists:** The first example constructs a password by combining randomly selected elements from predefined lists. This includes upper case letters, lower case letters, numbers, and special characters. The `random` module in Python provides functions like `random.choice()`, `random.randint()`, and `random.random()` that are used to select these random elements.
+
+2. **Readable Password Generator Using Text Files:** The second example creates a password that's easier to remember, yet maintains complexity. This method reads words from a text file, capitalizes words that are longer than five characters, and combines a randomly chosen word with a special character and a two-digit number. The generated password, while still random, will be more readable and memorable for the user.
+
+These password generators demonstrate the versatility of Python and the power of the `random` module. By simply adjusting parameters or changing the method of generation, you can create a password that fits specific security requirements or personal preferences.
+
+For additional knowledge on random number generation in Python, consider the following resources:
+- [Python random module](https://docs.python.org/3/library/random.html)
+- [Generating Random Data In Python](https://realpython.com/python-random/)
+
+---
 ## Additional Resources
 
 For those looking to delve deeper into Python, here are some additional resources:
