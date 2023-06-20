@@ -1,0 +1,62 @@
+﻿[
+  {
+    "Title": "To Kill a Mockingbird",
+    "Author": "Harper Lee",
+    "Year": "1960",
+    "Genre": "Fiction"
+  },
+  {
+    "Title": "1984",
+    "Author": "George Orwell",
+    "Year": "1949",
+    "Genre": "Dystopian"
+  },
+  {
+    "Title": "Harry Potter and the Philosopher's Stone",
+    "Author": "J.K. Rowling",
+    "Year": "1997",
+    "Genre": "Fantasy"
+  },
+  {
+    "Title": "The Great Gatsby",
+    "Author": "F. Scott Fitzgerald",
+    "Year": "1925",
+    "Genre": "Fiction"
+  },
+  {
+    "Title": "Moby Dick",
+    "Author": "Herman Melville",
+    "Year": "1851",
+    "Genre": "Adventure"
+  },
+  {
+    "Title": "Pride and Prejudice",
+    "Author": "Jane Austen",
+    "Year": "1813",
+    "Genre": "Romance"
+  },
+  {
+    "Title": "The Lord of the Rings",
+    "Author": "J.R.R. Tolkien",
+    "Year": "1954",
+    "Genre": "Fantasy"
+  },
+  {
+    "Title": "Jane Eyre",
+    "Author": "Charlotte Bronte",
+    "Year": "1847",
+    "Genre": "Romance"
+  },
+  {
+    "Title": "The Catcher in the Rye",
+    "Author": "J.D. Salinger",
+    "Year": "1951",
+    "Genre": "Fiction"
+  },
+  {
+    "Title": "The Hobbit",
+    "Author": "J.R.R. Tolkien",
+    "Year": "1937",
+    "Genre": "Fantasy"
+  }
+]
