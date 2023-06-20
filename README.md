@@ -34,6 +34,7 @@ Welcome to the "python-basic" repository! This repository aims to provide a comp
   - [17. Multiple Face Detection](#17-multiple-face-detection)
   - [18. Random Password Generator](#18-random-password-generator)
   - [19. Pandas Overview](#19-pandas-overview)
+  - [20. Coinmarketcap API](#20-cinmarketcap-api)
 - [Additional Resources](#additional-resources)
 - [Contributing](#contributing)
 - [Contact](#contact)
@@ -364,6 +365,35 @@ In this section, we will be providing an overview of Pandas, a powerful and vers
 **7. Transposing the DataFrame:**
 - The DataFrame can be transposed, i.e., switching the rows and columns, using the `.T` attribute. New columns can be added to the transposed DataFrame in a similar manner to the original DataFrame.
 
+---
+
+## 20. Cinmarketcap API
+
+This section focuses on fetching and analyzing cryptocurrency data using the CoinMarketCap API. It includes interacting with the API, parsing JSON responses, and using the data to compute profit or loss for a cryptocurrency portfolio.
+
+**1. Libraries Used:**
+- 'requests': This library is used for making HTTP requests in Python.
+- 'json': This library is used for parsing JSON strings and converting Python data structures to JSON format.
+
+**2. API Request:**
+- An API request is sent to CoinMarketCap API to fetch the latest 5 cryptocurrencies data.
+
+**3. Parsing JSON Response:**
+- The JSON response received from the API is parsed and used to extract cryptocurrency information.
+
+**4. Displaying Cryptocurrency Details:**
+- The symbol and price of the first cryptocurrency in the list are printed out.
+
+**5. Cryptocurrency Portfolio:**
+- A portfolio of owned cryptocurrencies is defined, containing information such as symbol, amount owned, and the price paid per coin.
+
+**6. Calculating Profit/Loss:**
+- For each cryptocurrency in the portfolio, if the symbol matches with any of the top 5 cryptocurrencies fetched from the API, the total amount paid for the coin, current value, profit/loss per coin, and total profit/loss for this coin are calculated and printed.
+
+**7. Portfolio Performance:**
+- The total profit/loss for all coins in the portfolio is calculated and printed, providing a high-level snapshot of the portfolio's performance.
+
+---
 
 ## Additional Resources
 
