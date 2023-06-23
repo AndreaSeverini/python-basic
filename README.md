@@ -35,6 +35,7 @@ Welcome to the "python-basic" repository! This repository aims to provide a comp
   - [18. Random Password Generator](#18-random-password-generator)
   - [19. Pandas Overview](#19-pandas-overview)
   - [20. Coinmarketcap API](#20-cinmarketcap-api)
+  - [21. Tkinter Portfolio App](#21-tkinter-portfolio-app)
 - [Additional Resources](#additional-resources)
 - [Contributing](#contributing)
 - [Contact](#contact)
@@ -367,7 +368,59 @@ In this section, we will be providing an overview of Pandas, a powerful and vers
 
 ---
 
-## 20. Cinmarketcap API
+## 20. Coinmarketcap API
+This script helps users track the profit or loss of their cryptocurrency investments. It provides a high-level snapshot of the performance of the user's portfolio, based on the latest market prices. It first fetches the top 5 latest cryptocurrencies from the CoinMarketCap API, then it goes through the user's portfolio (defined in the 'coins' list) to see if the user has any of these top cryptocurrencies. If a match is found, it calculates the current market value of the user's holding in that cryptocurrency as well as the profit or loss since the user's investment. Finally, it adds up all the profits and losses across all cryptocurrencies in the user's portfolio to present the total profit or loss. This tool is useful for users to stay informed about their cryptocurrency investments and make informed decisions based on the latest market data.
+
+1. **API Request**
+    - An API request is made using the requests library. The request is made to the CoinMarketCap API, with parameters to get the latest 5 cryptocurrencies, converted to USD.
+
+2. **Parsing JSON Data**
+    - The json.loads() function is used to parse the JSON content from the API response.
+
+3. **Printing Cryptocurrency Details**
+    - Printing the symbol and price of the first cryptocurrency in the list.
+
+4. **Defining Your Portfolio**
+    - A list of coins that you own, with details such as the symbol of the coin, the amount you own, and the price you paid per coin.
+
+5. **Calculating Total Profit/Loss**
+    - Initializing the total profit/loss variable.
+    - Looping through the first 5 cryptocurrencies in the API response and your list of owned coins to calculate the total profit/loss.
+
+6. **Printing Total Profit/Loss**
+    - Print the total profit/loss for the entire portfolio.
+
+### Running the Script
+Replace "YOUR_API_KEY" with your actual API key from CoinMarketCap for the API calls to work. Run the script and check your profit or loss based on the current prices of cryptocurrencies.
+
+---
+
+## 21. Tkinter App GUI for Portfolio visualization
+This project involves using the CoinMarketCap API to fetch and display data about cryptocurrencies in a GUI.
+
+1. **Import Libraries**
+    - Import necessary libraries like Tkinter, Requests, and Json.
+
+2. **Define Helper Functions**
+    - `font_color()`: Determines the color of the font based on whether a value is positive or negative.
+    - `my_portfolio()`: Makes a request to the CoinMarketCap API, calculates profits or losses for each coin in your portfolio, and displays this information in the GUI.
+
+3. **Setup GUI using Tkinter**
+    - Instantiate the main window, set title and (optional) icon.
+    - Define and grid headers for each column in the portfolio: Coin Name, Price, Coin Owned, Total Amount Paid, Current Value, P/L per coin, Total P/L with coin.
+    - Call `my_portfolio()` function to fetch and display data in the GUI.
+
+4. **Run the Application**
+    - Start the main Tkinter event loop.
+    - Print line separator in the console.
+
+5. **Notes for Deployment**
+    - Install `pyinstaller` using pip for packaging the script into an executable.
+    - Substitute your own API key in the REST API endpoint searchParams.
+    - Create an executable using `pyinstaller --windowed --name=MyApp main.py`.
+    - Run the executable to start the application.
+
+
 
 This section focuses on fetching and analyzing cryptocurrency data using the CoinMarketCap API. It includes interacting with the API, parsing JSON responses, and using the data to compute profit or loss for a cryptocurrency portfolio.
 
@@ -392,6 +445,10 @@ This section focuses on fetching and analyzing cryptocurrency data using the Coi
 
 **7. Portfolio Performance:**
 - The total profit/loss for all coins in the portfolio is calculated and printed, providing a high-level snapshot of the portfolio's performance.
+
+---
+
+## 21. Tkinter Portfolio App
 
 ---
 
